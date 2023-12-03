@@ -1,0 +1,110 @@
+.pageBuilderBox {
+  display: flex;
+  height: 90vh;
+}
+
+.blankBox {
+  flex: 1;
+  width: 80%;
+  background-color: rgb(237, 241, 244);
+  position: relative;
+}
+
+.sidebarBox {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  background: #2d2d2d;
+}
+
+.sidebarBox>div {
+  width: 90%;
+}
+
+.verGripImage {
+  height: 20px;
+  margin-top: 6.6%;
+}
+
+.sidebarBox>div>div {
+  height: 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 96%;
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  cursor: grab
+}
+
+.component_selected {
+  border: solid red;
+}
+
+h3 {
+  font-size: 20px;
+  color: white;
+}
+
+.draggableElem input {
+  cursor: grab;
+}
+
+.dragging {
+  cursor: grabbing;
+}
+.confBtn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Media query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+  .pageBuilderBox {
+    flex-direction: column;
+  }
+                                .blankBox,
+                                .sidebarBox {
+    width: 100%;
+  }
+  
+                .sidebarBox {
+    padding-bottom: 50px;
+  }
+        .verGripImage {
+    margin-top: 5.2%;
+  }
+}
+
+/* Media query for screens between 600px and 900px */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .blankBox {
+    width: 70%;
+  }
+
+                .sidebarBox {
+    width: 30%;
+  }
+
+        .verGripImage {
+    margin-top: 7%;
+  }
+}
+
+/* Media query for screens between 901px and 1200px */
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  .blankBox {
+    width: 74%;
+  }
+
+                .sidebarBox {
+    width: 26%;
+  }
+
+        .verGripImage {
+    margin-top: 7.5%;
+  }
+}
