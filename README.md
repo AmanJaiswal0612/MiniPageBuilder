@@ -35,7 +35,7 @@ The 'MiniPageBuilder' component is a versatile React component designed for craf
 
 ## Sneak Peek
 
-Explore the builder: [Mini Page Builder](https://mini-page-builder-ten.vercel.app/)
+Explore the builder: [Mini Page Builder](https://flourishing-cascaron-9f129a.netlify.app/)
 
 ## Dependencies
 

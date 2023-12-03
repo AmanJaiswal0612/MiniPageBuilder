@@ -5,13 +5,12 @@ import close from "../assets/close.svg"
 const Popup = (props) => {
   const [formData, setFormData] = useState({});
 
-  //setting the state according to input changes in modal
   const handleChange = (e) => {
     let { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  //a function to save changes
+
   const handleSave = () => {
     props.handleSaveChanges(
       formData,
@@ -106,7 +105,6 @@ const Popup = (props) => {
         </div>
         <div className="button-group">
           <button onClick={handleSave}>Save Changes</button>
-          {/* <button onClick={props?.handleCloseModal}>Cancel</button> */}
         </div>
       </div>
     </div>
